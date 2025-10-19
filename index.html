@@ -30,7 +30,7 @@
         body {
             max-width: 100vw;
             overflow-x: hidden;
-            overflow-y: auto;
+            overflow-y: auto
         }
 
         body {
@@ -38,7 +38,7 @@
             color: var(--soft);
             font-family: Poppins, system-ui, Arial, sans-serif;
             background:
-                radial-gradient(1200px 800px at 50% 50%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0)) fixed,
+                radial-gradient(1200px 800px at 50% 50%, rgba(255, 255, 255, .08), rgba(0, 0, 0, 0)) fixed,
                 linear-gradient(120deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
             background-size: 120% 120%, 400% 400%;
             animation: bgShift 16s ease-in-out infinite;
@@ -47,15 +47,15 @@
 
         @keyframes bgShift {
             0% {
-                background-position: 50% 50%, 0% 50;
+                background-position: 50% 50%, 0% 50
             }
 
             50% {
-                background-position: 50% 50%, 100% 50;
+                background-position: 50% 50%, 100% 50
             }
 
             100% {
-                background-position: 50% 50%, 0% 50;
+                background-position: 50% 50%, 0% 50
             }
         }
 
@@ -63,7 +63,7 @@
             position: fixed;
             inset: 0;
             z-index: 1;
-            pointer-events: none;
+            pointer-events: none
         }
 
         .star {
@@ -71,30 +71,30 @@
             border-radius: 50%;
             box-shadow: 0 0 12px #ffd700, 0 0 4px #fff;
             animation: blink 2s infinite alternate, moveStar 22s linear infinite;
-            opacity: .7;
+            opacity: .7
         }
 
         @keyframes blink {
             from {
-                opacity: .4;
+                opacity: .4
             }
 
             50% {
-                opacity: 1;
+                opacity: 1
             }
 
             to {
-                opacity: .4;
+                opacity: .4
             }
         }
 
         @keyframes moveStar {
             0% {
-                transform: translateY(0);
+                transform: translateY(0)
             }
 
             100% {
-                transform: translateY(-130px);
+                transform: translateY(-130px)
             }
         }
 
@@ -105,7 +105,7 @@
             height: 100vh;
             z-index: 0;
             pointer-events: none;
-            filter: saturate(1.2);
+            filter: saturate(1.2)
         }
 
         .particles {
@@ -118,16 +118,16 @@
                 radial-gradient(1.5px 1.5px at 70% 60%, rgba(255, 255, 255, .6) 40%, transparent 41%),
                 radial-gradient(1.2px 1.2px at 40% 80%, rgba(255, 255, 255, .5) 40%, transparent 41%);
             animation: drift 30s linear infinite;
-            opacity: .35;
+            opacity: .35
         }
 
         @keyframes drift {
             0% {
-                transform: translateY(0);
+                transform: translateY(0)
             }
 
             100% {
-                transform: translateY(-80px);
+                transform: translateY(-80px)
             }
         }
 
@@ -136,7 +136,7 @@
             inset: 0;
             pointer-events: none;
             z-index: 0;
-            overflow: visible;
+            overflow: visible
         }
 
         .diya {
@@ -147,29 +147,29 @@
             height: 60px;
             background: radial-gradient(circle at 50% 25%, #ffdb4d, #cc8c00 80%);
             border-radius: 20px 20px 15px 15px;
-            box-shadow: 0 0 15px 6px rgba(255, 195, 50, 0.7), inset 0 5px 5px rgba(255, 255, 153, 0.9);
+            box-shadow: 0 0 15px 6px rgba(255, 195, 50, .7), inset 0 5px 5px rgba(255, 255, 153, .9);
             animation: floatUpDown 6s ease-in-out infinite;
             animation-delay: var(--delay);
-            filter: drop-shadow(0 0 6px rgba(255, 180, 40, 0.8));
+            filter: drop-shadow(0 0 6px rgba(255, 180, 40, .8))
         }
 
         @keyframes floatUpDown {
             0% {
                 transform: translateY(100vh);
-                opacity: 0;
+                opacity: 0
             }
 
             10% {
-                opacity: 1;
+                opacity: 1
             }
 
             90% {
-                opacity: 1;
+                opacity: 1
             }
 
             100% {
                 transform: translateY(-20vh);
-                opacity: 0;
+                opacity: 0
             }
         }
 
@@ -183,19 +183,19 @@
             height: 18px;
             background: radial-gradient(ellipse at center, #fff7ad 0%, #ffa500 70%);
             border-radius: 50% 50% 45% 45%;
-            filter: drop-shadow(0 0 6px rgba(255, 240, 150, 0.8));
-            animation: flameFlicker 1.2s ease-in-out infinite alternate;
+            filter: drop-shadow(0 0 6px rgba(255, 240, 150, .8));
+            animation: flameFlicker 1.2s ease-in-out infinite alternate
         }
 
         @keyframes flameFlicker {
             from {
-                transform: translateX(-50%) scale(1, 0.95);
-                opacity: 0.9;
+                transform: translateX(-50%) scale(1, .95);
+                opacity: .9
             }
 
             to {
                 transform: translateX(-50%) scale(1.08, 1.1);
-                opacity: 1;
+                opacity: 1
             }
         }
 
@@ -205,7 +205,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 16px 30px;
+            padding: 16px 30px
         }
 
         .brand {
@@ -213,9 +213,9 @@
             font-family: "Great Vibes", cursive;
             font-size: 56px;
             color: #ffdd94;
-            text-shadow: 0 0 8px rgba(255, 215, 100, 0.9), 0 0 16px rgba(255, 160, 40, 0.75), 0 0 24px rgba(255, 140, 0, 0.5);
+            text-shadow: 0 0 8px rgba(255, 215, 100, .9), 0 0 16px rgba(255, 160, 40, .75), 0 0 24px rgba(255, 140, 0, .5);
             text-align: center;
-            width: 100%;
+            width: 100%
         }
 
         .music-btn {
@@ -226,12 +226,12 @@
             padding: 10px 14px;
             cursor: pointer;
             transition: .2s transform ease, .25s background ease;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow)
         }
 
         .music-btn:hover {
             transform: translateY(-1px);
-            background: rgba(255, 255, 255, .2);
+            background: rgba(255, 255, 255, .2)
         }
 
         #app {
@@ -240,19 +240,19 @@
             display: grid;
             place-items: center;
             padding: 24px;
-            min-height: calc(100vh - 78px);
+            min-height: calc(100vh - 78px)
         }
 
         .card {
             width: 92vw;
             max-width: 980px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
-            border: 1px solid rgba(255, 215, 100, 0.4);
+            background: linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .4));
+            border: 1px solid rgba(255, 215, 100, .4);
             border-radius: 20px;
             box-shadow: var(--shadow);
             padding: 24px;
             backdrop-filter: blur(12px);
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
         .title {
@@ -260,25 +260,25 @@
             font-family: "Playfair Display", serif;
             font-weight: 700;
             color: #ffdd94;
-            text-shadow: 0 0 8px rgba(255, 215, 100, 0.9), 0 0 16px rgba(255, 160, 40, 0.75), 0 0 24px rgba(255, 140, 0, 0.5);
-            letter-spacing: .4px;
+            text-shadow: 0 0 8px rgba(255, 215, 100, .9), 0 0 16px rgba(255, 160, 40, .75), 0 0 24px rgba(255, 140, 0, .5);
+            letter-spacing: .4px
         }
 
         .form {
             display: grid;
             gap: 16px;
-            margin-top: 8px;
+            margin-top: 8px
         }
 
         .field {
             display: grid;
-            gap: 6px;
+            gap: 6px
         }
 
         .field span {
             font-weight: 600;
             color: #fff7df;
-            text-shadow: 0 0 6px rgba(255, 200, 120, 0.8), 0 0 12px rgba(255, 170, 70, 0.6);
+            text-shadow: 0 0 6px rgba(255, 200, 120, .8), 0 0 12px rgba(255, 170, 70, .6)
         }
 
         .field input[type="text"] {
@@ -289,45 +289,45 @@
             background: rgba(0, 0, 0, .25);
             color: var(--white);
             outline: none;
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
         .hint {
-            opacity: .7;
+            opacity: .7
         }
 
         .actions {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            margin-top: 10px;
+            margin-top: 10px
         }
 
         .btn {
             appearance: none;
-            border: 1px solid rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(0, 0, 0, .25);
             background: linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, .05));
             color: #e0ec2c;
             padding: 10px 16px;
             border-radius: 12px;
             cursor: pointer;
             transition: .25s transform ease, .25s background ease;
-            box-shadow: 0 0 8px rgba(10, 10, 10, 0.7), inset 0 0 14px rgba(173, 61, 238, 0.9);
-            font-weight: 700;
+            box-shadow: 0 0 8px rgba(10, 10, 10, .7), inset 0 0 14px rgba(173, 61, 238, .9);
+            font-weight: 700
         }
 
         .btn:hover {
             transform: translateY(-1px);
-            background: rgba(252, 249, 249, 0.2);
+            background: rgba(252, 249, 249, .2)
         }
 
         .primary {
             border-color: var(--gold-deep);
-            background: linear-gradient(180deg, #7a3a9e66, #6b1b2a66);
+            background: linear-gradient(180deg, #7a3a9e66, #6b1b2a66)
         }
 
         .secondary {
-            border-color: #ffffff33;
+            border-color: #ffffff33
         }
 
         .share-buttons-container {
@@ -335,14 +335,14 @@
             gap: 10px;
             flex-wrap: wrap;
             margin-top: 15px;
-            align-items: center;
+            align-items: center
         }
 
         .share-buttons-container p {
             margin: 0;
             font-weight: 600;
             color: var(--gold);
-            text-shadow: 0 0 6px rgba(255, 200, 120, 0.8);
+            text-shadow: 0 0 6px rgba(255, 200, 120, .8)
         }
 
         .share-buttons-container .btn {
@@ -352,19 +352,19 @@
             padding: 10px 18px;
             border-radius: 14px;
             font-weight: 700;
-            box-shadow: 0 0 12px rgba(248, 214, 109, 0.6);
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
+            box-shadow: 0 0 12px rgba(248, 214, 109, .6);
+            transition: background .3s ease, box-shadow .3s ease;
+            text-decoration: none
         }
 
         .share-buttons-container .btn:hover {
             background: linear-gradient(180deg, var(--bg4), var(--bg3));
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
-            color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .9);
+            color: #fff
         }
 
         .hidden {
-            display: none;
+            display: none
         }
 
         .hero {
@@ -372,7 +372,7 @@
             gap: 18px;
             align-items: center;
             justify-content: flex-start;
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
         .photo-frame {
@@ -383,7 +383,7 @@
             border: 2px solid var(--gold);
             background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0) 60%);
             box-shadow: 0 0 20px rgba(248, 214, 109, .35), inset 0 0 30px rgba(248, 214, 109, .2);
-            overflow: hidden;
+            overflow: hidden
         }
 
         .photo-frame::before {
@@ -393,18 +393,18 @@
             border-radius: 50%;
             border: 6px double rgba(248, 214, 109, .4);
             filter: drop-shadow(0 0 8px rgba(248, 214, 109, .6));
-            animation: ringglow 3.2s ease-in-out infinite;
+            animation: ringglow 3.2s ease-in-out infinite
         }
 
         @keyframes ringglow {
 
             0%,
             100% {
-                opacity: .5;
+                opacity: .5
             }
 
             50% {
-                opacity: 1;
+                opacity: 1
             }
         }
 
@@ -414,25 +414,25 @@
             height: auto;
             object-fit: cover;
             display: block;
-            filter: contrast(1.05) saturate(1.1);
+            filter: contrast(1.05) saturate(1.1)
         }
 
         @media (max-width:600px) {
             .headline .script {
-                font-size: 40px;
+                font-size: 40px
             }
 
             .photo-frame {
                 width: 135px;
-                height: 135px;
+                height: 135px
             }
 
             .card {
-                padding: 10px;
+                padding: 10px
             }
 
             .brand {
-                font-size: 38px;
+                font-size: 38px
             }
         }
 
@@ -442,19 +442,7 @@
             right: -10px;
             width: 64px;
             height: 64px;
-            animation: floatUpDown var(--speed, 18s) linear infinite;
-        }
-
-        @keyframes floaty {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-6px);
-            }
+            animation: floatUpDown var(--speed, 18s) linear infinite
         }
 
         .diya-base {
@@ -465,7 +453,7 @@
             height: 18px;
             border-radius: 14px 14px 6px 6px;
             background: radial-gradient(60% 80% at 50% 40%, #ffb76a, #cc6a28);
-            box-shadow: inset 0 4px 10px rgba(0, 0, 0, .25), 0 0 10px rgba(255, 140, 64, .45);
+            box-shadow: inset 0 4px 10px rgba(0, 0, 0, .25), 0 0 10px rgba(255, 140, 64, .45)
         }
 
         .diya-flame {
@@ -476,18 +464,18 @@
             height: 26px;
             transform: translateX(-50%);
             background: radial-gradient(ellipse at 50% 40%, #fff6a8, #ffb347 55%, rgba(255, 120, 0, 0) 70%);
-            border-radius: 50% 50% 50% 50%;
+            border-radius: 50%;
             filter: blur(.2px) drop-shadow(0 0 6px rgba(255, 190, 80, .9));
-            animation: flicker .18s infinite alternate ease-in-out;
+            animation: flicker .18s infinite alternate ease-in-out
         }
 
         @keyframes flicker {
             from {
-                transform: translateX(-50%) scale(1, .95);
+                transform: translateX(-50%) scale(1, .95)
             }
 
             to {
-                transform: translateX(-50%) scale(1.05, 1.05);
+                transform: translateX(-50%) scale(1.05, 1.05)
             }
         }
 
@@ -495,76 +483,76 @@
             font-family: "Great Vibes", cursive;
             font-size: 48px;
             color: #ffdd94;
-            text-shadow: 0 0 8px rgba(255, 215, 100, 0.9), 0 0 16px rgba(255, 160, 40, 0.75), 0 0 24px rgba(255, 140, 0, 0.5);
-            margin: 0;
+            text-shadow: 0 0 8px rgba(255, 215, 100, .9), 0 0 16px rgba(255, 160, 40, .75), 0 0 24px rgba(255, 140, 0, .5);
+            margin: 0
         }
 
         .sub {
             margin: 6px 0 0;
             font-size: 18px;
             color: #fff7df;
-            text-shadow: 0 0 6px rgba(255, 200, 120, 0.8), 0 0 12px rgba(255, 170, 70, 0.6);
+            text-shadow: 0 0 6px rgba(255, 200, 120, .8), 0 0 12px rgba(255, 170, 70, .6)
         }
 
         .glow-pulse {
-            animation: glowpulse 3s ease-in-out infinite;
+            animation: glowpulse 3s ease-in-out infinite
         }
 
         @keyframes glowpulse {
 
             0%,
             100% {
-                text-shadow: 0 0 10px rgba(248, 214, 109, .5), 0 0 18px rgba(212, 167, 44, .2);
+                text-shadow: 0 0 10px rgba(248, 214, 109, .5), 0 0 18px rgba(212, 167, 44, .2)
             }
 
             50% {
-                text-shadow: 0 0 18px rgba(248, 214, 109, .9), 0 0 36px rgba(212, 167, 44, .35);
+                text-shadow: 0 0 18px rgba(248, 214, 109, .9), 0 0 36px rgba(212, 167, 44, .35)
             }
         }
 
         .greeting {
-            margin: 18px 0 0;
+            margin: 18px 0 0
         }
 
         .greeting .line {
             font-size: 20px;
             line-height: 1.6;
             margin: 6px 0;
-            opacity: .0;
+            opacity: 0;
             color: #fff7df;
-            text-shadow: 0 0 6px rgba(255, 200, 120, 0.8), 0 0 12px rgba(255, 170, 70, 0.6);
+            text-shadow: 0 0 6px rgba(255, 200, 120, .8), 0 0 12px rgba(255, 170, 70, .6)
         }
 
         .type {
-            animation: typeIn .9s ease forwards;
+            animation: typeIn .9s ease forwards
         }
 
         .delay-1 {
-            animation-delay: .5s;
+            animation-delay: .5s
         }
 
         .delay-2 {
-            animation-delay: 1.1s;
+            animation-delay: 1.1s
         }
 
         .delay-3 {
-            animation-delay: 1.8s;
+            animation-delay: 1.8s
         }
 
         .accent {
             color: var(--accent);
-            text-shadow: 0 0 10px rgba(255, 215, 168, .35);
+            text-shadow: 0 0 10px rgba(255, 215, 168, .35)
         }
 
         @keyframes typeIn {
             from {
                 opacity: 0;
-                transform: translateY(8px);
+                transform: translateY(8px)
             }
 
             to {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateY(0)
             }
         }
 
@@ -575,26 +563,36 @@
             padding: 16px;
             opacity: .75;
             color: #fff7df;
-            text-shadow: 0 0 6px rgba(255, 210, 140, 0.9);
+            text-shadow: 0 0 6px rgba(255, 210, 140, .9)
         }
 
         .warning {
             color: #ffcc00;
             font-size: 14px;
-            margin-top: 5px;
+            margin-top: 5px
+        }
+
+        /* Small visual for sparkleBurst to avoid layout trashing */
+        .sparkle-burst {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, .15), transparent 60%);
+            animation: burst .8s ease-out forwards
+        }
+
+        @keyframes burst {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0
+            }
         }
     </style>
 </head>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '5f2e175e82392c7d79a9e2b135a26c96',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/5f2e175e82392c7d79a9e2b135a26c96/invoke.js"></script>
+
 <body>
     <canvas id="fireworks" aria-hidden="true"></canvas>
     <div class="particles" aria-hidden="true"></div>
@@ -625,13 +623,26 @@
                     <button id="clearForm" type="button" class="btn">Reset</button>
                 </div>
             </form>
+            <!-- Ad placement 1 (single, non-duplicated) -->
+            <div id="ad-slot-1" style="margin-top:12px;text-align:center;">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': '5f2e175e82392c7d79a9e2b135a26c96',
+                        'format': 'iframe',
+                        'height': 50,
+                        'width': 320,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/5f2e175e82392c7d79a9e2b135a26c96/invoke.js"></script>
+            </div>
         </section>
 
         <!-- Greet View -->
         <section id="greet-view" class="card hidden">
             <div class="hero">
                 <div class="photo-frame">
-                    <!-- Always default image -->
                     <img id="recipientPhoto" alt="Sender photo" src="diwali photo.jpg" />
                     <div class="diya-float" aria-hidden="true">
                         <div class="diya-base"></div>
@@ -660,46 +671,33 @@
                 <button id="universalShare" class="btn">Share Link 🔗</button>
                 <a id="waShare" class="btn" target="_blank" rel="noopener">WhatsApp 📱</a>
             </div>
+
+            <!-- Optional: another ad placement if needed -->
+            <div id="ad-slot-2" style="margin-top:12px;text-align:center;">
+                <!-- keep same key if network requires, but do NOT duplicate in the same place repeatedly -->
+                <script type="text/javascript">
+                    atOptions = {
+                        'key': '5f2e175e82392c7d79a9e2b135a26c96',
+                        'format': 'iframe',
+                        'height': 50,
+                        'width': 320,
+                        'params': {}
+                    };
+                </script>
+                <script type="text/javascript"
+                    src="//www.highperformanceformat.com/5f2e175e82392c7d79a9e2b135a26c96/invoke.js"></script>
+            </div>
         </section>
     </main>
 
     <audio id="bgm" loop preload="auto" src="happy music.mp3"></audio>
-    
-<script type="text/javascript">
-	atOptions = {
-		'key' : '5f2e175e82392c7d79a9e2b135a26c96',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-<script type="text/javascript">
-	atOptions = {
-		'key' : '5f2e175e82392c7d79a9e2b135a26c96',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-<script type="text/javascript">
-	atOptions = {
-		'key' : '5f2e175e82392c7d79a9e2b135a26c96',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/5f2e175e82392c7d79a9e2b135a26c96/invoke.js"></script>
-    </footer>
-	
 
+    <!-- App scripts -->
     <script>
         // ----- Blinking, moving stars -----
         function spawnBlinkingStars() {
             const starDiv = document.querySelector('.blinking-stars');
-            starDiv.innerHTML = '';
-            const stars = 64;
+            starDiv.innerHTML = ''; const stars = 64;
             for (let i = 0; i < stars; i++) {
                 const star = document.createElement('div');
                 star.className = 'star';
@@ -718,25 +716,13 @@
 
         // ----- Fireworks JS -----
         (function () {
-            const canvas = document.getElementById('fireworks');
-            if (!canvas) return;
-            const ctx = canvas.getContext('2d');
-            let W, H, dpr = Math.min(2, window.devicePixelRatio || 1);
-            function resize() {
-                W = canvas.width = Math.floor(window.innerWidth * dpr);
-                H = canvas.height = Math.floor(window.innerHeight * dpr);
-                canvas.style.width = window.innerWidth + 'px';
-                canvas.style.height = window.innerHeight + 'px';
-            }
-            resize();
-            window.addEventListener('resize', resize);
-
-            const GRAVITY = 0.03, FIREWORKS = [];
-            const MAX_PARTICLES = 56, MIN_INT = 16, MAX_INT = 26;
-
+            const canvas = document.getElementById('fireworks'); if (!canvas) return;
+            const ctx = canvas.getContext('2d'); let W, H, dpr = Math.min(2, window.devicePixelRatio || 1);
+            function resize() { W = canvas.width = Math.floor(window.innerWidth * dpr); H = canvas.height = Math.floor(window.innerHeight * dpr); canvas.style.width = window.innerWidth + 'px'; canvas.style.height = window.innerHeight + 'px'; }
+            resize(); window.addEventListener('resize', resize);
+            const GRAVITY = 0.03, FIREWORKS = []; const MAX_PARTICLES = 56, MIN_INT = 16, MAX_INT = 26;
             function spawn(x = Math.random() * W, y = H * 0.3 + Math.random() * H * 0.35) {
-                const hue = Math.floor(180 + Math.random() * 180);
-                const parts = [];
+                const hue = Math.floor(180 + Math.random() * 180); const parts = [];
                 for (let i = 0; i < MAX_PARTICLES; i++) {
                     const ang = (Math.PI * 2) * (i / MAX_PARTICLES) + Math.random() * 0.35;
                     const sp = 1.5 + Math.random() * 2.1;
@@ -747,79 +733,41 @@
             let tick = 0, next = Math.floor(MIN_INT + Math.random() * (MAX_INT - MIN_INT));
             (function loop() {
                 ctx.globalCompositeOperation = 'destination-out';
-                ctx.fillStyle = 'rgba(0,0,0,0.08)';
-                ctx.fillRect(0, 0, W, H);
+                ctx.fillStyle = 'rgba(0,0,0,0.08)'; ctx.fillRect(0, 0, W, H);
                 ctx.globalCompositeOperation = 'lighter';
-                if (tick % next === 0) {
-                    spawn();
-                    if (Math.random() < 0.45) spawn(W * Math.random() * 0.5, H * (0.25 + Math.random() * 0.5));
-                    next = Math.floor(MIN_INT + Math.random() * (MAX_INT - MIN_INT));
-                }
+                if (tick % next === 0) { spawn(); if (Math.random() < 0.45) spawn(W * Math.random() * 0.5, H * (0.25 + Math.random() * 0.5)); next = Math.floor(MIN_INT + Math.random() * (MAX_INT - MIN_INT)); }
                 tick++;
                 for (let f = FIREWORKS.length - 1; f >= 0; f--) {
                     const fw = FIREWORKS[f];
                     for (const p of fw.parts) {
-                        p.life++;
-                        p.vy += GRAVITY * 0.15;
-                        p.x += p.vx;
-                        p.y += p.vy;
-                        const a = Math.max(0, 1 - p.life / p.maxLife);
-                        const sat = 80 + Math.sin((p.life / 8)) * 20;
-                        ctx.beginPath();
-                        ctx.fillStyle = `hsla(${p.hue}, ${sat}%, 60%, ${a * 0.9})`;
-                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                        ctx.fill();
-                        if (Math.random() < 0.25) {
-                            ctx.beginPath();
-                            ctx.fillStyle = `hsla(${p.hue}, 90%, 80%, ${a * 0.35})`;
-                            ctx.arc(p.x + (Math.random() - 0.5) * 3, p.y + (Math.random() - 0.5) * 3, 0.8, 0, Math.PI * 2);
-                            ctx.fill();
-                        }
+                        p.life++; p.vy += GRAVITY * 0.15; p.x += p.vx; p.y += p.vy;
+                        const a = Math.max(0, 1 - p.life / p.maxLife); const sat = 80 + Math.sin((p.life / 8)) * 20;
+                        ctx.beginPath(); ctx.fillStyle = `hsla(${p.hue}, ${sat}%, 60%, ${a * 0.9})`; ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fill();
+                        if (Math.random() < 0.25) { ctx.beginPath(); ctx.fillStyle = `hsla(${p.hue}, 90%, 80%, ${a * 0.35})`; ctx.arc(p.x + (Math.random() - 0.5) * 3, p.y + (Math.random() - 0.5) * 3, 0.8, 0, Math.PI * 2); ctx.fill(); }
                     }
-                    fw.parts = fw.parts.filter(p => p.life < p.maxLife);
-                    if (!fw.parts.length) FIREWORKS.splice(f, 1);
+                    fw.parts = fw.parts.filter(p => p.life < p.maxLife); if (!fw.parts.length) FIREWORKS.splice(f, 1);
                 }
                 requestAnimationFrame(loop);
             })();
-
-            window.addEventListener('click', (e) => {
-                if (e.target.closest('button, a, input, label')) return;
-                spawn(e.clientX, e.clientY);
-            });
+            window.addEventListener('click', (e) => { if (e.target.closest('button, a, input, label')) return; spawn(e.clientX, e.clientY); });
         })();
 
         // ----- Music + prefs -----
         function getParams() { return new URL(window.location.href).searchParams; }
-        const bgm = document.getElementById('bgm');
-        const musicToggle = document.getElementById('musicToggle');
+        const bgm = document.getElementById('bgm'); const musicToggle = document.getElementById('musicToggle');
         function setMusicIcon(isOn) { musicToggle.textContent = isOn ? '🔊' : '🔇'; }
         function saveMusicPref(isOn) { try { localStorage.setItem('happy_music_on', isOn ? '1' : '0'); } catch { } }
         function getMusicPref() { try { return localStorage.getItem('happy_music_on') !== '0'; } catch { return true; } }
-
         async function tryPlayBgm() {
             if (bgm.src && getMusicPref()) {
-                try {
-                    await bgm.play();
-                    setMusicIcon(true);
-                    saveMusicPref(true);
-                } catch {
-                    setMusicIcon(false);
-                }
-            } else {
-                setMusicIcon(false);
-            }
+                try { await bgm.play(); setMusicIcon(true); saveMusicPref(true); } catch { setMusicIcon(false); }
+            } else { setMusicIcon(false); }
         }
         musicToggle.addEventListener('click', async () => {
-            if (bgm.paused) {
-                await tryPlayBgm();
-            } else {
-                bgm.pause();
-                setMusicIcon(false);
-                saveMusicPref(false);
-            }
+            if (bgm.paused) { await tryPlayBgm(); } else { bgm.pause(); setMusicIcon(false); saveMusicPref(false); }
         });
 
-        // ----- Main App Logic (photo removed) -----
+        // ----- Main App Logic -----
         const createView = document.getElementById('create-view');
         const greetView = document.getElementById('greet-view');
         const senderNameInput = document.getElementById('senderName');
@@ -829,50 +777,38 @@
         const senderLabel = document.getElementById('senderLabel');
         const recipientPhoto = document.getElementById('recipientPhoto');
         const createYourOwn = document.getElementById('createYourOwn');
-
         let currentShareUrl = '';
 
-        // Build share URL with only name
         function buildShareUrl({ name }) {
             const u = new URL(window.location.href.split('?')[0]);
             u.searchParams.set('name', name);
             return u.toString();
         }
-
-        // Build the requested share message
         function buildShareMessage(name, url) {
             const line1 = `🎇 ${name} has sent you a sparkling Diwali greeting!`;
             const line2 = `Wishing you happiness, success, and endless joy. 🌟`;
             const line3 = `🎁 Click here to view your personalized message!`;
             return `${line1}\n${line2}\n${line3}\n${url}`;
         }
-
-        // Update share targets (WhatsApp + generic share)
         function setShareTargets(url, name) {
             currentShareUrl = url;
             const msg = buildShareMessage(name, url);
             const encodedMsg = encodeURIComponent(msg);
             waShare.href = `https://wa.me/?text=${encodedMsg}`;
         }
-
         universalShare.addEventListener('click', async () => {
             const name = senderNameInput.value.trim() || senderLabel.textContent.trim() || 'Someone';
             const msg = buildShareMessage(name, currentShareUrl || window.location.href);
             if (navigator.share) {
                 try {
-                    await navigator.share({
-                        title: 'Happy Diwali Personalized Wish',
-                        text: msg,
-                        url: undefined // URL already included in text to keep message format exact
-                    });
+                    await navigator.share({ title: 'Happy Diwali Personalized Wish', text: msg, url: undefined });
                 } catch (error) {
-                    copyShareLinkFallback(currentShareUrl);
+                    copyShareLinkFallback(currentShareUrl || window.location.href);
                 }
             } else {
-                copyShareLinkFallback(currentShareUrl);
+                copyShareLinkFallback(currentShareUrl || window.location.href);
             }
         });
-
         function copyShareLinkFallback(url) {
             navigator.clipboard.writeText(url).then(() => {
                 universalShare.textContent = 'Link Copied! ✅';
@@ -882,27 +818,21 @@
             });
         }
 
-        document.getElementById('create-form').addEventListener('submit', async (e) => {
+        document.getElementById('create-form').addEventListener('submit', (e) => {
             e.preventDefault();
             const name = senderNameInput.value.trim();
             if (!name) { senderNameInput.focus(); return; }
-
-            // Always use default image
             recipientPhoto.src = 'diwali photo.jpg';
-
             senderLabel.textContent = name;
-
             const url = buildShareUrl({ name });
             setShareTargets(url, name);
-
             createView.classList.add('hidden');
             greetView.classList.remove('hidden');
             sparkleBurst();
         });
 
         clearFormBtn.addEventListener('click', () => {
-            senderNameInput.value = '';
-            currentShareUrl = '';
+            senderNameInput.value = ''; currentShareUrl = '';
             recipientPhoto.src = 'diwali photo.jpg';
         });
 
@@ -920,22 +850,17 @@
             setTimeout(() => layer.remove(), 850);
         }
 
-        // Boot from URL params (name only)
         function bootFromParams() {
             const params = getParams();
             const name = params.get('name') || '';
-
             if (name) {
                 senderLabel.textContent = name;
                 recipientPhoto.src = 'diwali photo.jpg';
-
                 createView.classList.add('hidden');
                 greetView.classList.remove('hidden');
-
                 const url = buildShareUrl({ name });
                 setShareTargets(url, name);
             }
-
             setMusicIcon(!bgm.paused && getMusicPref());
         }
         bootFromParams();
@@ -946,9 +871,7 @@
             if (firstInteractionBound) return;
             firstInteractionBound = true;
             const handler = async () => {
-                if (getMusicPref() && bgm.paused) {
-                    await tryPlayBgm();
-                }
+                if (getMusicPref() && bgm.paused) { await tryPlayBgm(); }
                 window.removeEventListener('pointerdown', handler);
                 window.removeEventListener('touchstart', handler);
             };
@@ -956,8 +879,12 @@
             window.addEventListener('touchstart', handler, { once: true });
         }
         bindFirstInteraction();
-  <script type='text/javascript' src='//pl27884794.effectivegatecpm.com/30/89/27/308927af8da3d220e2dd56eaa8d36ecb.js'></script>
-	<script type='text/javascript' src='//pl27884805.effectivegatecpm.com/d9/d3/1f/d9d31fa7b27425fbfbcae9c3a0a11e60.js'></script>
+    </script>
+
+    <!-- External ad network scripts placed once at the end to reduce blocking -->
+    <script type="text/javascript"
+        src="//pl27884794.effectivegatecpm.com/30/89/27/308927af8da3d220e2dd56eaa8d36ecb.js"></script>
+    
 </body>
 
 </html>
